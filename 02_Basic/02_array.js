@@ -21,3 +21,33 @@ let studentRollnumber = [1, 2, 3, [4 , 5, 6], 7, [8 ,9 ,[10,11],12],13];
 let finalStudentRollNumber = studentRollnumber.flat(Infinity);
 console.log(finalStudentRollNumber);
 
+
+
+
+
+/*
+  +++++++++++++++++++++++++++ push()  ++++++++++++++++++++++++++++++++++++++++++++
+[
+  'Bhaskar',
+  'shambhaji',
+  'madhav',
+  [ 'Bhanudas', 'somnatha', 'Dattu' ]
+]
+++++++++++++++++++++++++++++  concat()  +++++++++++++++++++++++++++++++++++++++++++
+[
+  'satish', 'mayur',
+  'vamshi', 'akasha',
+  'nilesh', 'Rahul',
+  'Akasha', 'vishal'
+]
+++++++++++++++++++++++++++++  Flat()  +++++++++++++++++++++++++++++++++++++++++++
+[
+   1, 2, 3,  4,  5,  6,
+   7, 8, 9, 10, 11, 12,
+  13
+]
+
+
+
+
+*/
