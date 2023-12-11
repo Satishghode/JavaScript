@@ -17,3 +17,4 @@
 ( (name)=>{
     console.log(`WellCome ${name} Arrow LIFE Function `);
 })("satish")
+
