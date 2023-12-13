@@ -63,7 +63,7 @@ const obj =[
 
 
 for (const object of obj) {
-    console.log(object);   
+    // console.log(object);   
 }
 
 
@@ -75,5 +75,8 @@ const myObject = {
         location: 'Sukewadi tal.Sangamner Dis A-Ngar '
 }
 
-
+// using the forof loop Object can't iterable. It possiable using the for in loop 
+for (const obj of myObject) {
+    console.log(obj);
+}
 
