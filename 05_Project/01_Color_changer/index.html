@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Changer Game</title>
 </head>
-<body  >
-        
+<style>
+    .canvas{
+        text-align: center;
+        margin: 100px auto  100px;
+    }
+    .button{
+        width: 100px;
+        height: 100px;
+        border: solid black 2px;
+        display: inline-block;
+    }
+    #red{
+        background-color: red;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #blue{
+        background-color: blue;
+    }
+    #gray{
+        background-color: gray;
+    }
+
+</style>
+
+<body>
+    <div class="canvas">
+        <span id="red" class="button"></span>
+        <span id="yellow" class="button"></span>
+        <span id="blue"  class="button"></span>
+        <span id="gray" class="button"></span>
+        <h2>Try clicking on one of the colors above to change the background color of this page!</h2>
+
+    </div>
+
 
 </body>
+<script>
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector('body');
+    console.log(buttons);
+    console.log(body);    
+
+    buttons.forEach((button) => {
+        button.addEventListener('mouseover',(e)=>{
+            console.log(e);
+            console.log(e.target);
+            if (e.target.id == 'red') {
+                body.style.backgroundColor= e.target.id;
+            }
+            if (e.target.id == 'yellow') {
+                body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id == 'blue'){
+                body.style.backgroundColor = e.target.id ; 
+            }
+            if (e.target.id == 'gray') {
+                body.style.backgroundColor= e.target.id;
+            }
+
+        })
+    });
+
+
+</script>
+
 </html>
